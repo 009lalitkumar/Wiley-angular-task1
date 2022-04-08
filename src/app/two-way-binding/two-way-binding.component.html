@@ -1,0 +1,14 @@
+<form action="#">
+    <div>
+      <label for="artifact">Artifact :&emsp;</label>
+      <input type="text" name="artifact" id="artifact" [(ngModel)] = "artifact" value = {{name}} (input)="packageChange()" />
+    </div> <br>
+    <div>
+      <label for="name">Name&emsp;:&emsp;</label>
+      <input type="text" id="name" name="name"  value = {{artifact}} [(ngModel)] = "name" />
+    </div> <br />
+    <div>
+      <label for="package">Package :&emsp;</label>
+      <input type="text" id="package" name="package"  [(ngModel)] = "package" />
+    </div> <br />
+</form>
